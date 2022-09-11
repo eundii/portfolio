@@ -1,0 +1,216 @@
+
+// // icon
+// $icons: (
+//   // 12
+//   12 'pencil',
+//   12 'new',
+//   12 'exclamation' 'blue',
+//   // 14
+//   14 'link',
+//   // 16
+//   16 'arrow',
+//   16 'arrow' 'active',
+//   16 'arrow' 'disabled',
+//   16 'arrow' 'red1',
+//   16 'arrow' 'red1' 'active',
+//   16 'arrow' 'red1' 'disabled',
+//   16 'arrow' 'gray',
+//   16 'arrow' 'gray' 'bold',
+//   16 'arrow' 'gray2',
+//   16 'arrow' 'gray3',
+//   16 'arrow' 'blue',
+//   16 'arrow' 'blue' 'bold',
+//   16 'arrow' 'blue2',
+//   16 'arrow' 'white',
+//   16 'close',
+//   16 'delete' 'gray',
+//   16 'edit',
+//   16 'minus' 'gray',
+//   16 'refresh' 'gray',
+//   16 'refresh' 'white',
+//   16 'trash',
+//   16 'pencil',
+//   16 'plus' 'gray',
+//   16 'question',
+//   16 'question' 'white',
+//   16 'question' 'gray',
+//   // 18
+//   18 'arrow',
+//   18 'arrow' 'active',
+//   18 'arrow' 'disabled',
+//   // 20
+//   20 'arrow' 'gray',
+//   20 'range',
+//   20 'refresh' 'white',
+//   20 'viewall',
+//   20 'fincalender' 'alarm',
+//   20 'fincalender' 'won',
+//   20 'fincalender' 'deposit',
+//   20 'fincalender' 'expense',
+//   // 24
+//   24 'card',
+//   24 'calendar' 'gray',
+//   24 'tabmenu',
+//   24 'financial',
+//   24 'liabilities',
+//   24 'unfinancial',
+//   24 'arrow',
+//   24 'arrow' 'white' 'bold',
+//   24 'arrow' 'white',
+//   24 'arrow' 'gray',
+//   24 'delete',
+//   24 'heart',
+//   24 'heart' 'active',
+//   24 'more',
+//   24 'medal1',
+//   24 'medal2',
+//   24 'medal3',
+//   24 'purpose',
+//   24 'plus' 'white',
+//   24 'tip' 'blue',
+//   24 'trash' 'gray',
+//   // 28
+//   28 'back',
+//   28 'calendar',
+//   28 'close',
+//   28 'close' 'white',
+//   28 'drawer',
+//   28 'edit',
+//   28 'info',
+//   28 'listedit',
+//   28 'menu',
+//   28 'more',
+//   28 'refresh',
+//   28 'search',
+//   28 'setting',
+//   28 'share',
+//   28 'question',
+//   28 'pencil',
+//   // 32
+//   32 'arrow',
+//   32 'arrow' 'white',
+//   32 'arrow' 'disabled',
+//   32 'bank',
+//   32 'bond',
+//   32 'card',
+//   32 'heart',
+//   32 'heart' 'active',
+//   32 'instalment',
+//   32 'insurance',
+//   32 'loan',
+//   32 'p2p',
+//   32 'pay',
+//   32 'securities',
+//   32 'sponsion',
+//   32 'traffic',
+//   32 'quizevent' 'mileage',
+//   32 'quizevent' 'shinhan',
+//   // 36
+//   36 'certify' 'active',
+//   36 'certify' 'disabled',
+//   36 'sign' 'active',
+//   36 'naver' 'active',
+//   // 45
+//   45 'purpose01',
+//   45 'purpose02',
+//   45 'purpose03',
+//   45 'purpose04',
+//   45 'purpose05',
+//   45 'purpose06',
+//   45 'purpose07',
+//   45 'purpose08',
+//   45 'purpose09',
+//   45 'purpose10',
+//   45 'purpose11',
+//   45 'purpose12',
+//   45 'purpose13',
+//   45 'purpose14',
+//   45 'purpose15',
+//   45 'purpose16',
+//   45 'taxsaving01',
+//   45 'taxsaving02',
+//   45 'taxsaving03',
+//   45 'taxsaving04',
+//   // 48
+//   48 'credit',
+//   48 'children',
+//   48 'driving',
+//   48 'etc',
+//   48 'everydaylife',
+//   48 'guarantee',
+//   48 'health',
+//   48 'incometax01',
+//   48 'incometax02',
+//   48 'incometax03',
+//   48 'insurance',
+//   48 'investment',
+//   48 'pay',
+//   48 'pension',
+//   48 'property',
+//   48 'taxsaving01',
+//   48 'taxsaving02',
+//   48 'taxsaving03',
+//   48 'taxsaving04',
+//   48 'travel',
+//   48 'virtualassets',
+//   // 52
+//   52 'stamp',
+//   52 'stamp' 'success',
+//   52 'mileage100' 'stamp',
+//   52 'mileage100' 'stamp' 'success',
+//   52 'mileage1000' 'stamp',
+//   52 'mileage1000' 'stamp' 'success',
+//   // 64
+//   64 'complete',
+//   64 'error',
+//   64 'error' 'red',
+//   64 'strategy',
+//   64 'connect',
+//   64 'history',
+//   64 'faq',
+//   64 'agreement',
+//   64 'info'
+// );
+
+// .icon {
+//   &.right {
+//     transform: rotate(90deg);
+//   }
+//   &.down {
+//     transform: rotate(180deg);
+//   }
+//   &.left {
+//     transform: rotate(-90deg);
+//   }
+//   @each $size, $name, $color, $status in $icons {
+//     &-#{$size} {
+//       &-#{$name} {
+//         @if $color {
+//           &-#{$color} {
+//             // 컬러가 있음
+//             @include icon($size, #{$name}_#{$color});
+//             @if $color == 'active' {
+//               &-active {
+//                 @include icon($size, #{$name}_active);
+//               }
+//             }
+//             @else if $color == 'disabled' {
+//               &-disabled {
+//                 @include icon($size, #{$name}_disabled);
+//               }
+//             }
+//             // 컬러가 있고 상태값이 있음
+//             @if $status {
+//               &-#{$status} {
+//                 @include icon($size, #{$name}_#{$color}_#{$status});
+//               }
+//             }
+//           }
+//         }
+//         @else {
+//           @include icon($size, #{$name});
+//         }
+//       }
+//     }
+//   }
+// }

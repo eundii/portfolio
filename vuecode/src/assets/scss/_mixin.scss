@@ -1,0 +1,34 @@
+// // icon
+// @mixin icon($iconSize, $iconName, $extention: 'png') {
+//   display: inline-flex;
+//   width: ($iconSize*0.1)+rem;
+//   height: ($iconSize*0.1)+rem;
+//   &:before {
+//     content: '';
+//     display: inline-block;
+//     width: ($iconSize*0.1)+rem;
+//     height: ($iconSize*0.1)+rem;
+//     background: url("#{$img-path}/common/icons/icon_#{$iconSize}_#{$iconName}.#{$extention}") no-repeat 0 0 / 100% auto;
+//     image-rendering: pixelated;
+//     image-rendering: -webkit-optimize-contrast;
+//   }
+// }
+// @mixin bgicon($iconSize, $iconName, $extention: 'png') {
+//   background: url("#{$img-path}/common/icons/icon_#{$iconSize}_#{$iconName}.#{$extention}") no-repeat center center / (($iconSize*0.1)+rem) auto;
+//   image-rendering: pixelated;
+//   image-rendering: -webkit-optimize-contrast;
+// }
+
+// // card
+// @mixin card ($padding: 3rem 2.2rem, $border-color: transparent, $border-radius: 1.6rem, $background-color: $white){
+//   padding: $padding;
+//   border: 1px solid $border-color;
+//   border-radius: $border-radius;
+//   background-color: $background-color;
+// }
+
+// max-width
+@mixin maxWidth {
+    max-width: 160rem;
+    margin: 0 auto;
+}
