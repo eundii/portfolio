@@ -68,6 +68,30 @@
         transform: translateX(-50%) translateY(-7px);
     }
 }
+.project {
+    display: flex;
+    flex-direction: column;
+    width: 43rem;
+    height: 58.4rem;
+    padding: 6rem 2rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 1rem 0 rgba(0, 0, 0, 0.2);
+    &__title {
+        @include fontHeight(4.4);
+        font-weight: $fontBold;
+        color: $white;
+        text-align: center;
+    }
+    &__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        img {
+            display: block;
+        }
+    }
+}
 // // hr
 // hr {
 //   width: 100%;

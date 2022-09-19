@@ -1,11 +1,97 @@
 // section
+.home {
+    position: relative;
+    height: 100vh;
+    background-color: $bg1;
+    .bg-area {
+        overflow: hidden;
+        .bg-circle {
+            position: absolute;
+            width: 80vh;
+            height: 80vh;
+            border-radius: 50%;
+            filter: blur(10rem);
+            &.circle1 {
+                top: -5rem;
+                background: -o-linear-gradient(-45deg, #23A6D5, #23D5AB);
+                background: -ms-linear-gradient(-45deg, #23A6D5, #23D5AB);
+                background: -moz-linear-gradient(-45deg, #23A6D5, #23D5AB);
+                background: -webkit-linear-gradient(-45deg, #23A6D5, #23D5AB);
+                background: linear-gradient(-45deg, #23A6D5, #23D5AB);
+                filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#23A6D5', endColorstr='#23D5AB', GradientType=1);
+                background-size: 400% 400%;
+                -webkit-animation: bgGradient 10s ease infinite;
+                -o-animation: bgGradient 10s ease infinite;
+                -moz-animation: bgGradient 10s ease infinite;
+                -ms-animation: bgGradient 10s ease infinite;
+                animation: bgGradient 10s ease infinite;
+                overflow: hidden;
+                background-attachment:fixed;
+            }
+            &.circle2 {
+                top: 10rem;
+                left: 50rem;
+                background: -o-linear-gradient(-45deg, #975bf1, #f05cc3);
+                background: -ms-linear-gradient(-45deg, #975bf1, #f05cc3);
+                background: -moz-linear-gradient(-45deg, #975bf1, #f05cc3);
+                background: -webkit-linear-gradient(-45deg, #975bf1, #f05cc3);
+                background: linear-gradient(-45deg, #975bf1, #f05cc3);
+                filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#975bf1', endColorstr='#f05cc3', GradientType=1);
+                background-size: 400% 400%;
+                -webkit-animation: bgGradient 10s ease infinite;
+                -o-animation: bgGradient 10s ease infinite;
+                -moz-animation: bgGradient 10s ease infinite;
+                -ms-animation: bgGradient 10s ease infinite;
+                animation: bgGradient 10s ease infinite;
+                overflow: hidden;
+                background-attachment:fixed;
+            }
+        }
+    }
+    .title-area {
+        position: absolute;
+        top: 50%;
+        left: 10rem;
+        transform: translateY(-50%);
+        .sub-text {
+            font-size: 2.4rem;
+            font-weight: $fontBlack;
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 10rem;
+                height: 0.3rem;
+                margin-right: 2rem;
+                background-color: $black;
+                vertical-align: middle;
+            }
+        }
+        .title {
+            margin-top: 4rem;
+            font-size: 13rem;
+            font-weight: $fontBlack;
+            line-height: 1;
+            span {
+                display: block;
+            }
+            &-black {
+                color: $black;
+            }
+            &-white {
+                color: transparent;
+                -webkit-text-stroke: 0.2rem $black;
+                text-stroke: 0.2rem $black;
+            }
+        }
+    }
+}
 .about {
     &__header {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 50vh;
+        height: 100vh;
         background-color: $bg1;
         &-title {
             position: relative;
@@ -94,14 +180,15 @@
         }
     }
 }
-.skill {
-    background-color: $primary-blue;
+.skills {
+    padding: 16rem 0 30rem;
+    background-color: $bg1;
     .marquee {
         &__header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 16rem 8rem 8rem;
+            padding: 0 8rem 8rem;
             @include maxWidth();
             &-title {
                 font-size: 8rem;
@@ -110,22 +197,102 @@
                 color: $bg1;
             }
         }
+        &__body {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                // z-index: 1;
+                display: block;
+                width: 100%;
+                height: 0.1rem;
+                transform: translate(-50%, -50%);
+                background-color: $line1;
+            }
+        }
+        &__list {
+            z-index: 1;
+            padding: 5rem 0;
+            border-top: 0.1rem solid $line1;
+            border-bottom: 0.1rem solid $line1;
+            &-item {
+                display: inline-block;
+                margin: 0 5rem;
+                vertical-align: middle;
+                .img-area {
+                    background-color: $bg1;
+                    border-radius: 0.8rem;
+                    overflow: hidden;
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                .info-area {
+                    margin-top: 2rem;
+                    .logo-name {
+                        font-size: 2.4rem;
+                        font-weight: $fontBold;
+                        color: $black;
+                    }
+                    .logo-info {
+                        margin-top: 0.4rem;
+                        font-size: 1.6rem;
+                        color: $text6;
+                    }
+                }
+                &.big {
+                    width: 36rem;
+                    .img-area {
+                        height: 36rem;
+                    }
+                }
+                &.small {
+                    width: 26rem;
+                    .img-area {
+                        height: 26rem;
+                    }
+                }
+            }
+        }
     }
 }
-// .home {
-//     &__content {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         justify-content: center;
-//         height: 100vh;
-//     }
-//     &__title {
-//         font-size: 10rem;
-//         font-weight: $fontBold;
-//         background-image: linear-gradient(180deg,$bg1, $primary-pink 30%, $primary-blue 55%,$primary-aqua 70%, $bg1);
-//         background-attachment: fixed;
-//         -webkit-background-clip: text;
-//         -webkit-text-fill-color: transparent;
-//     }
-// }
+.projects {
+    max-width: 140rem;
+    padding: 16rem 0 10rem;
+    margin: 0 auto;
+    &__header {
+        text-align: center;
+        &-title {
+            font-size: 8rem;
+            font-weight: $fontBlack;
+            font-style: italic;
+            color: $text1;
+        }
+    }
+    &__list {
+        display: flex;
+        // align-items: center;
+        // justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 5.6rem;
+        &-item {
+            margin: 1.6rem;
+        }
+    }
+}
+
+/* animation */
+@keyframes bgGradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}

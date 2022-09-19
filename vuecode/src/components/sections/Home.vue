@@ -1,10 +1,18 @@
 <template>
-  <section class="about">
+  <section class="home">
     <div class="bg-area">
       <div class="bg-circle circle1"></div>
       <div class="bg-circle circle2"></div>
     </div>
-    <div class="about-title"></div>
+    <div class="title-area">
+      <span class="sub-text">
+        Introduce
+      </span>
+      <h2 class="title">
+        <span class="title-black">Web Publisher</span>
+        <span class="title-white">Portfolio.</span>
+      </h2>
+    </div>
   </section>
 </template>
 
@@ -13,7 +21,7 @@
 // import gsap from 'gsap';
 
 export default {
-  name: "AboutSection",
+  name: "HomeSection",
   // components: { Profile },
   // mounted: function() {
   //   this.scrollAnimation();

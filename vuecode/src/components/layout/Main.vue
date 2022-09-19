@@ -1,24 +1,25 @@
 <template>
   <main id="main" class="main">
+    <Home/>
     <About/>
-    <Skill/>
-    <!-- <About/>
-    <Forte/>
-    <Project/> -->
+    <Skills/>
+    <Projects/>
   </main>
 </template>
 
 <script>
+import Home from '@/components/sections/Home.vue'
 import About from '@/components/sections/About.vue'
-import Skill from '@/components/sections/Skill.vue'
-// import Project from '@/components/sections/Project.vue'
+import Skills from '@/components/sections/Skills.vue'
+import Projects from '@/components/sections/Projects.vue'
 
 export default {
   name: 'MainLayout',
   components: {
+    Home,
     About,
-    Skill,
-    // Project
+    Skills,
+    Projects
 }
 }
 </script>
