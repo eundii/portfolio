@@ -20,6 +20,6 @@ export default {
     About,
     Skills,
     Projects
-}
+  }
 }
 </script>

@@ -20,11 +20,11 @@
                 background: linear-gradient(-45deg, #23A6D5, #23D5AB);
                 filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#23A6D5', endColorstr='#23D5AB', GradientType=1);
                 background-size: 400% 400%;
-                -webkit-animation: bgGradient 10s ease infinite;
-                -o-animation: bgGradient 10s ease infinite;
-                -moz-animation: bgGradient 10s ease infinite;
-                -ms-animation: bgGradient 10s ease infinite;
-                animation: bgGradient 10s ease infinite;
+                -webkit-animation: bgGradient 5s ease infinite;
+                -o-animation: bgGradient 5s ease infinite;
+                -moz-animation: bgGradient 5s ease infinite;
+                -ms-animation: bgGradient 5s ease infinite;
+                animation: bgGradient 5s ease infinite;
                 overflow: hidden;
                 background-attachment:fixed;
             }
@@ -38,11 +38,11 @@
                 background: linear-gradient(-45deg, #975bf1, #f05cc3);
                 filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#975bf1', endColorstr='#f05cc3', GradientType=1);
                 background-size: 400% 400%;
-                -webkit-animation: bgGradient 10s ease infinite;
-                -o-animation: bgGradient 10s ease infinite;
-                -moz-animation: bgGradient 10s ease infinite;
-                -ms-animation: bgGradient 10s ease infinite;
-                animation: bgGradient 10s ease infinite;
+                -webkit-animation: bgGradient 8s ease infinite;
+                -o-animation: bgGradient 8s ease infinite;
+                -moz-animation: bgGradient 8s ease infinite;
+                -ms-animation: bgGradient 8s ease infinite;
+                animation: bgGradient 8s ease infinite;
                 overflow: hidden;
                 background-attachment:fixed;
             }
@@ -81,6 +81,22 @@
                 color: transparent;
                 -webkit-text-stroke: 0.2rem $black;
                 text-stroke: 0.2rem $black;
+            }
+        }
+    }
+    .scroll-down-marker {
+        position: absolute;
+        bottom: 2rem;
+        right: 0;
+        .circle-text{
+            font-size: 1.8rem;
+            font-weight: $fontBold;
+            svg {
+                -webkit-animation: rotate 5s linear infinite;
+                -o-animation: rotate 5s linear infinite;
+                -moz-animation: rotate 5s linear infinite;
+                -ms-animation: rotate 5s linear infinite;
+                animation: rotate 5s linear infinite;
             }
         }
     }
@@ -285,6 +301,50 @@
 }
 
 /* animation */
+@-webkit-keyframes bgGradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+@-moz-keyframes bgGradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+@-ms-keyframes bgGradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+@-o-keyframes bgGradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
 @keyframes bgGradient {
     0% {
         background-position: 0% 50%
@@ -295,4 +355,25 @@
     100% {
         background-position: 0% 50%
     }
+}
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0); }
+}
+@-moz-keyframes rotate {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0); }
+}
+@-ms-keyframes rotate {
+    from { -ms-transform: rotate(360deg); }
+    to { -ms-transform: rotate(0); }
+}
+@-o-keyframes rotate {
+    from { -o-transform: rotate(360deg); }
+    to { -o-transform: rotate(0); }
+}
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
 }

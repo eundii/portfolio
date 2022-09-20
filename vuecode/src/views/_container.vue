@@ -1,20 +1,20 @@
 <template>
   <div class="wrap">
-    <!-- <Header /> -->
+    <Header />
     <Main />
     <!-- <Footer /> -->
   </div>
 </template>
 
 <script>
-// import Header from '@/components/Header.vue'
+import Header from '@/components/layout/Header.vue'
 import Main from '@/components/layout/Main.vue'
 // import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    // Header,
+    Header,
     Main,
     // Footer
   }

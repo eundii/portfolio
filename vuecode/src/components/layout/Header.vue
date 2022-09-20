@@ -1,8 +1,11 @@
 <template>
   <header id="header">
-    <h1 class="logo">
-      <a href="#"><span class="sr-only">EUNDII</span></a>
-    </h1>
+    <div class="logo">
+      <div class="logo-symbol"></div>
+      <a href="mailto: eundii9292@gmail.com" class="logo-text">
+        / eundii9292@gmail.com
+      </a>
+    </div>
     <nav class="gnb">
       <ul class="gnb-menu">
         <li>
@@ -18,33 +21,16 @@
           <a href="#">PROJECT</a>
         </li>
       </ul>
+      <a href="https://github.com/eundii/portfolio" class="link-github">view github</a>
     </nav>
   </header>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: 'HeaderLayout',
+  // props: {
+  //   msg: String
+  // }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>
