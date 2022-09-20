@@ -1,4 +1,7 @@
 //layout
+.wrap {
+    background-color: $bg1;
+}
 #header {
     position: fixed;
     z-index: 100;
@@ -7,7 +10,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 5rem 10rem;
+    padding: 5rem 6rem;
     .logo {
         display: flex;
         align-items: center;

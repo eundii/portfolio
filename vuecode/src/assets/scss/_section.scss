@@ -1,8 +1,14 @@
 // section
+.section-title {
+    padding: 2rem 6rem;
+    font-size: 3.2rem;
+    font-weight: $fontBlack;
+    border-top: 0.2rem solid $black; 
+    border-bottom: 0.2rem solid $black; 
+}
 .home {
     position: relative;
     height: 100vh;
-    background-color: $bg1;
     .bg-area {
         overflow: hidden;
         .bg-circle {
@@ -51,7 +57,7 @@
     .title-area {
         position: absolute;
         top: 50%;
-        left: 10rem;
+        left: 6rem;
         transform: translateY(-50%);
         .sub-text {
             font-size: 2.4rem;
@@ -89,7 +95,7 @@
         bottom: 2rem;
         right: 0;
         .circle-text{
-            font-size: 1.8rem;
+            font-size: 1.9rem;
             font-weight: $fontBold;
             svg {
                 -webkit-animation: rotate 5s linear infinite;
@@ -102,6 +108,7 @@
     }
 }
 .about {
+    padding-top: 10rem;
     &__header {
         display: flex;
         flex-direction: column;

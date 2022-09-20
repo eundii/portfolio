@@ -1,10 +1,8 @@
 <template>
   <section class="about">
-    <div class="bg-area">
-      <div class="bg-circle circle1"></div>
-      <div class="bg-circle circle2"></div>
-    </div>
-    <div class="about-title"></div>
+    <h2 class="section-title">
+      About Me
+    </h2>
   </section>
 </template>
 

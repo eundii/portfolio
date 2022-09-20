@@ -23,7 +23,7 @@
             <g>
                 <use xlink:href="#circlePath" fill="none"/>
                 <text fill="#000">
-                    <textPath xlink:href="#circlePath">Please Scroll Down To Read It. Follow Me!</textPath>
+                    <textPath xlink:href="#circlePath">Please Scroll Down To Read It &middot; Follow Me! &middot;</textPath>
                 </text>
             </g>
         </svg>
