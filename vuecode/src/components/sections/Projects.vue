@@ -1,26 +1,20 @@
 <template>
   <section class="projects">
-    <div class="projects__header">
-      <h3 class="projects__header-title">Many Projects</h3>
-    </div>
-    <div class="projects__body">
-      <ul class="projects__list">
-        <li class="projects__list-item">
-          <!-- card component -->
-          <div class="project">
-            <a href="#">
-              <div class="project__img-area">
-                <img src="" alt="">
-              </div>
-              <div class="project__text-area">
-                <div class="text-area__header">
-                  <p class="project-name">신한카드 모집인 T-pLay</p>
-                  <p class="project-detail"></p>
-                </div>
-              </div>
-            </a>
+    <div class="section-title">PROJECTS<span class="num">(26)</span></div>
+    <div class="project-list-group">
+      <ul class="project-list">
+        <li class="project-list-item">
+          <div class="item-header">
+            <span class="project-category">SI</span>
+            <p class="project-name">BMW korea DMS NEXT</p>
           </div>
-          <!-- // card component -->
+          <div class="item-body">
+            <p class="project-detail">html5, scss, kendo ui</p>
+            <p class="project-date">2021.07.19 ~ 2022.04.29</p>
+            <div class="project-img">
+              <img src="@/assets/images/projects/img_project2_thumnail.jpg" alt="">
+            </div>
+          </div>
         </li>
       </ul>
     </div>

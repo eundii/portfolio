@@ -9,7 +9,7 @@
         Introduce
       </p>
       <h1 class="title">
-        <span class="title-black">Web Publisher</span>
+        <span class="title-sm title-black">Front-End Developer</span>
         <span class="title-white">Portfolio.</span>
       </h1>
     </div>
