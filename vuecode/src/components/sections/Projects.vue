@@ -50,7 +50,163 @@
             </div>
             <div class="project-img">
               <div class="img-inner">
-                <img src="@/assets/images/projects/img_project3_thumnail.png" alt="">
+                <img src="@/assets/images/projects/img_project2_thumnail.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="project-list-item">
+          <div class="item-header">
+            <p class="project-name">BMW korea DMS NEXT 시스템구축</p>
+            <div class="project-skills">
+              <span class="category-badge">html5</span>
+              <span class="category-badge">scss</span>
+              <span class="category-badge">kendo</span>
+              <span class="category-badge">jquery</span>
+            </div>
+          </div>
+          <div class="item-body">
+            <div class="body-group">
+              <p class="project-date">
+                <span class="date-start">2021.07.19</span> 
+                ~ 
+                <span class="date-end">2022.04.29</span>
+              </p>
+              <p class="project-category">SI</p>
+            </div>
+            <div class="project-img">
+              <div class="img-inner">
+                <img src="@/assets/images/projects/img_project3_thumnail.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="project-list-item">
+          <div class="item-header">
+            <p class="project-name">BMW korea DMS NEXT 시스템구축</p>
+            <div class="project-skills">
+              <span class="category-badge">html5</span>
+              <span class="category-badge">scss</span>
+              <span class="category-badge">kendo</span>
+              <span class="category-badge">jquery</span>
+            </div>
+          </div>
+          <div class="item-body">
+            <div class="body-group">
+              <p class="project-date">
+                <span class="date-start">2021.07.19</span> 
+                ~ 
+                <span class="date-end">2022.04.29</span>
+              </p>
+              <p class="project-category">SI</p>
+            </div>
+            <div class="project-img">
+              <div class="img-inner">
+                <img src="@/assets/images/projects/img_project4_thumnail.png" alt="">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="project-list-item">
+          <div class="item-header">
+            <p class="project-name">BMW korea DMS NEXT 시스템구축</p>
+            <div class="project-skills">
+              <span class="category-badge">html5</span>
+              <span class="category-badge">scss</span>
+              <span class="category-badge">kendo</span>
+              <span class="category-badge">jquery</span>
+            </div>
+          </div>
+          <div class="item-body">
+            <div class="body-group">
+              <p class="project-date">
+                <span class="date-start">2021.07.19</span> 
+                ~ 
+                <span class="date-end">2022.04.29</span>
+              </p>
+              <p class="project-category">SI</p>
+            </div>
+            <div class="project-img">
+              <div class="img-inner">
+                <img src="@/assets/images/projects/img_project5_thumnail.png" alt="">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="project-list-item">
+          <div class="item-header">
+            <p class="project-name">BMW korea DMS NEXT 시스템구축</p>
+            <div class="project-skills">
+              <span class="category-badge">html5</span>
+              <span class="category-badge">scss</span>
+              <span class="category-badge">kendo</span>
+              <span class="category-badge">jquery</span>
+            </div>
+          </div>
+          <div class="item-body">
+            <div class="body-group">
+              <p class="project-date">
+                <span class="date-start">2021.07.19</span> 
+                ~ 
+                <span class="date-end">2022.04.29</span>
+              </p>
+              <p class="project-category">SI</p>
+            </div>
+            <div class="project-img">
+              <div class="img-inner">
+                <img src="@/assets/images/projects/img_project6_thumnail.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="project-list-item">
+          <div class="item-header">
+            <p class="project-name">BMW korea DMS NEXT 시스템구축</p>
+            <div class="project-skills">
+              <span class="category-badge">html5</span>
+              <span class="category-badge">scss</span>
+              <span class="category-badge">kendo</span>
+              <span class="category-badge">jquery</span>
+            </div>
+          </div>
+          <div class="item-body">
+            <div class="body-group">
+              <p class="project-date">
+                <span class="date-start">2021.07.19</span> 
+                ~ 
+                <span class="date-end">2022.04.29</span>
+              </p>
+              <p class="project-category">SI</p>
+            </div>
+            <div class="project-img">
+              <div class="img-inner">
+                <img src="@/assets/images/projects/img_project7_thumnail.png" alt="">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="project-list-item">
+          <div class="item-header">
+            <p class="project-name">BMW korea DMS NEXT 시스템구축</p>
+            <div class="project-skills">
+              <span class="category-badge">html5</span>
+              <span class="category-badge">scss</span>
+              <span class="category-badge">kendo</span>
+              <span class="category-badge">jquery</span>
+            </div>
+          </div>
+          <div class="item-body">
+            <div class="body-group">
+              <p class="project-date">
+                <span class="date-start">2021.07.19</span> 
+                ~ 
+                <span class="date-end">2022.04.29</span>
+              </p>
+              <p class="project-category">SI</p>
+            </div>
+            <div class="project-img">
+              <div class="img-inner">
+                <img src="@/assets/images/projects/img_project8_thumnail.png" alt="">
               </div>
             </div>
           </div>
