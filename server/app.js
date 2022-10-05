@@ -13,6 +13,10 @@ app.use(session({
     }
 }))
 
+app.use(express.json({
+    limit: "50mb"
+})); // json 파라미터로 던질 때 express 선언 필요 -> request 받을 때 필요
+
 const  server = app.listen(3000, () => {
     console.log('server started. port 3000.');
     // 터미널 => node app.js 입력 하면 서버 실행
@@ -68,7 +72,7 @@ app.post('/apirole/:alias', async(request, res) => {
 app.post('/api/:alias', async(request, res) => {
     try {
         // 사용자가 request 요청 시 :alias 주소값이 request.params.alias로 넘어감
-        res.send(await req.db(request.params.alias))
+        res.send(await req.db(request.params.alias, request.body.param)) // 파라미터 받을 때 request.body.param 필요 (detail에서 param으로 받음)
     } catch(err) {
         // 에러메시지
         res.status(500).send({

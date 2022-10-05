@@ -1,21 +1,22 @@
 <template>
   <div class="wrap">
     <Header />
-    <Main />
+    <router-view/>
+    <!-- <Main /> -->
     <!-- <Footer /> -->
   </div>
 </template>
 
 <script>
 import Header from '@/components/layout/Header.vue'
-import Main from '@/components/layout/Main.vue'
+// import Main from '@/components/layout/Main.vue'
 // import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'HomeView',
   components: {
     Header,
-    Main,
+    // Main,
     // Footer
   }
 }
