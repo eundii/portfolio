@@ -17,23 +17,23 @@
         return {
           projectId: 0,
           projectDetail: [],
-          // projectImage: []
+          projectImage: []
         };
       },
       created() {
         this.projectId = this.$route.query.project_id;
         this.getProjectDetail();
-        // this.getProjectImage();
+        this.getProjectImage();
       },
       methods: {
         async getProjectDetail() {
           this.projectDetail = await this.$api("/api/projectDetail", {param:[this.projectId]});
           console.log(this.projectDetail);
         },
-        // async getProjectImage() {
-        //   this.projectImage = await this.$api("/api/projectMainImg", {param:[this.projectId]});
-        //   console.log(this.projectImage);
-        // },
+        async getProjectImage() {
+          this.projectImage = await this.$api("/api/projectImage", {param:[this.projectId]});
+          console.log(this.projectImage);
+        },
         // 이미지 동적 연결
         imgPath(name) {
           return require("@/assets/images/projects/"+name);
