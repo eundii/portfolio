@@ -1,8 +1,8 @@
 <template>
   <div class="project-detail">
-    <h2 class="project-name">project_name</h2>
-    <div class="project-main-img">
-      <img src="" alt="">
+    <h2 class="project-name">{{projectDetail.project_name}}</h2>
+    <div class="project-main-img" :key="i" v-for="(pimg, i) in projectImage">
+      <img :src="imgPath(pimg.path)" alt="">
     </div>
   </div>
 </template>
@@ -16,7 +16,7 @@
       data() {
         return {
           projectId: 0,
-          projectDetail: [],
+          projectDetail: {},
           projectImage: []
         };
       },
@@ -27,7 +27,10 @@
       },
       methods: {
         async getProjectDetail() {
-          this.projectDetail = await this.$api("/api/projectDetail", {param:[this.projectId]});
+          let projectDetail = await this.$api("/api/projectDetail", {param:[this.projectId]});
+          if(projectDetail.length > 0) {
+            this.projectDetail = projectDetail[0];
+          }
           console.log(this.projectDetail);
         },
         async getProjectImage() {
