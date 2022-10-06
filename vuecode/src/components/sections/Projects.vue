@@ -17,9 +17,9 @@
             <div class="item-body">
               <div class="body-group">
                 <p class="project-date">
-                  <span class="date-start">{{project.date_start}}</span> 
+                  <span class="date-start">{{formatDate(project.date_start)}}</span> 
                   ~ 
-                  <span class="date-end">{{project.date_end}}</span>
+                  <span class="date-end">{{formatDate(project.date_end)}}</span>
                 </p>
                 <p class="project-category">{{project.category}}</p>
               </div>
@@ -62,6 +62,19 @@
         // 상세페이지 이동
         goToDetail(project_id) {
           this.$router.push({path:'/detail', query:{project_id:project_id}})
+        },
+        formatDate(date) {
+            var d = new Date(date),
+                month = '' + (d.getMonth() + 1),
+                day = '' + d.getDate(),
+                year = d.getFullYear();
+
+            if (month.length < 2) 
+                month = '0' + month;
+            if (day.length < 2) 
+                day = '0' + day;
+
+            return [year, month, day].join('-');
         }
       }
   }
